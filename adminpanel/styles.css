@@ -1,0 +1,752 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font:16px arial;
+  background-color: #ddd;
+    /*background-image: linear-gradient(45deg, #85FFBD 100%, #FFFB7D 100%);
+ /* background-image: url("../imag/mis.png");
+    background-repeat: no-repeat;
+    background-position-x: center; 
+    background-position-y:-45%;  
+    background-blend-mode:darken;*/
+}
+
+/**** header  *****/
+
+#wrapper{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0%;
+    left:230px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #FFFB7D 0% ,#85FFBD 100%);
+    box-shadow: 0px 2px 8px 0px black;
+    
+}
+.header{
+  display: flex;
+
+}
+.header h2{
+  font-weight: bold;
+  font-style: italic;
+  margin-left:40px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  #wrapper{left: 90px;}
+  .header h2{
+    font-size: 15px;
+    display: flex;
+    margin-left: 4%;
+  }
+
+}
+
+
+/***** header end   ****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********** sidenav start ************/
+
+
+
+  #srchstu{
+    width: 190px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 1px 20px 4px 40px;
+    transition: width 0.4s ease-in-out;
+    margin-right: 20px;
+  }
+  
+#srchstu:focus {
+    width: 250px;
+  }   
+ 
+.sid{
+  margin-top: 10px;
+}
+
+
+  .sidenav {
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:  #010844;
+    overflow-x: hidden;
+
+  }
+  .sid{
+    margin-top: 13px;
+  }
+
+  .sidenav h1{
+    margin-top: 13px;
+    color: white;
+    font-size: 38px;
+    
+  }
+  .sidenav h1{
+    
+    cursor: pointer;
+    margin-left: 0%;
+    padding-left:0%;
+    text-align: center;
+    
+  }
+ 
+ 
+  
+  .sidenav a, .dropdown-btn {
+    padding: 15px 8px 15px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+
+  }
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: black;
+    background-color: whitesmoke;
+  }
+
+
+     
+
+.active {
+  background-color: white;
+  color: black;
+}
+.dropdown-container {
+  display: none;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding-left: 0px;
+}
+
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/***** make responsive sidebar ****/
+@media screen and (max-height: 500px) {
+  .sidenav {width: 100px;}
+  .sidenav a {font-size: 10px;}
+}
+@media screen and (max-width: 800px) {
+  .fa-user-xmark{margin-left:22px;} /* for logout button**/
+  .sid:hover .fa-user-xmark{margin-left:48px;}/* for logout button  */
+  .fa-house{margin-left:22px;}/* for dashboard */
+  .sid:hover .fa-house{margin-left:48px;}
+  .sidenav {width: 90px;}
+  .sidenav:hover,.sidenav.expanded{width: 140px; transition: 0.7 ease; }
+  .sid:hover{margin-top: 33px; }
+  .sidenav h1{font-size: 20px; margin-top: 15px;}
+  .sidenav a {font-size: 20px; }
+  .sid .drop,span{display: none;}
+  .sidenav .dropdown-btn {font-size: 20px; text-align: center; }
+  .sidenav .dropdown-container a {font-size: 13px; }
+ 
+  
+}
+/*
+@media screen and (max-width: 300px) {
+  .main .mainn{width: 90%;}
+}*/
+
+
+
+
+
+
+/**************** sidenav end  *****************/
+
+
+
+
+
+/*************dashboard  start***************/
+#mai{
+  margin-right:10px;
+  height: 80vh;
+  overflow: auto;
+}
+#cardd{
+  height: 35vh;
+  overflow-x:hidden;
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+}
+#carddd{
+  width: 25%;
+  height: 180px;
+  margin: 10px;
+}
+
+
+
+/*
+.dissp{
+
+  margin-right: 10px;
+ /*
+  box-shadow: 0px 4px 8px 0px black;*//*
+}
+#cardd{
+  border: 1px solid black;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  height: 70vh;
+  overflow-x: hidden;
+  
+  
+  
+}
+#cardd .card{
+  color: #010844;
+  margin: 10px;
+  width: 25%;
+  height: 180px;
+  box-shadow: 1px 1px 5px 0px black;
+  overflow: hidden;
+  background-color: orange;
+}
+*/
+
+/*
+@media screen and (max-width: 800px){
+  .dip{margin-left: 0px;
+  }
+}*/
+
+
+@media screen and (max-width: 800px){
+  
+    #cardd{
+    
+     display: block;
+     height: 50vh;
+    
+    }
+    #cardd #carddd{
+      margin: 0%;
+      margin-bottom: 50px;
+      width:100%;
+      height: 180px;
+    }
+ 
+ }/*
+ 
+@media screen and (max-width: 378px){
+  #cardd .card{
+    margin: 0%;
+    margin-bottom: 50px;
+    width:100%;
+    height: 180px;
+  }
+
+}*/
+
+
+
+
+/*************dashboard end ***************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************  footer design  *********************/
+
+
+
+.mainn{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  position: fixed;
+  bottom: 0%;
+  left:230px;
+  border-top: 1px solid black;
+      
+}
+.mainn footer{
+margin-left: 400px;
+}
+
+
+
+@media screen and (max-width: 800px){
+ .mainn{left: 90px; }
+ .mainn footer{margin-left: 2%; font-size: 12px; }
+
+}
+
+
+
+/************* footer end  ****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************ main section start   **************/
+ 
+  .main {
+    margin-left: 235px; 
+    margin-top: 80px;
+     
+   
+ 
+  }
+  
+@media screen and (max-width: 800px) {
+  .main{margin-left: 120px;}
+}
+
+
+/************ end main section   **************/
+
+
+
+
+
+
+
+/*************   displaystudents data  ************/
+
+#addbtn{
+
+  margin-left: 20px;
+  margin-bottom: 5px;
+  position: relative;
+  
+
+}
+
+.disp{
+ /* border:1px solid black;
+  background-color: white;*/
+  height: 70vh;
+  overflow:auto;
+  margin-right: 20px;
+  margin-left: 20px;/*
+  box-shadow: 0px 4px 8px 0px black;*/
+   
+}
+@media screen and (max-width: 800px){
+  .disp{
+    margin-left: 0px;
+  
+  }
+  
+#addbtn{
+  margin-left: 0px;
+  display: inline-block;
+
+}
+}
+
+
+.table{
+  
+  border-spacing: 0;
+  width:100%;
+  border: 1px solid #ddd;
+ 
+}
+
+
+/*******profile****/
+
+.disip{
+  /* border:1px solid black;
+   background-color: white;*/
+   height: 70vh;
+   overflow: auto;
+   margin-right: 20px;
+   margin-left: 20px;
+   
+   
+    
+ }
+ @media screen and (max-width: 800px){
+   .disp{
+     margin-left: 0px;
+   
+   }
+  
+   #addbtn{
+     margin-left: 0px;
+     display: inline-block;
+   
+   }
+   }
+
+/**********profile end***********/
+
+
+/****************** end displaystudents data **************/
+
+
+/**********teacher panel start***************/
+#addstu{
+  padding: 30px;
+}
+
+#ticher .form-control{
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: transparent;
+
+}
+
+/************teacher panel end *************/
+
+
+
+/****************** addstudents start ******************/
+
+#addstu{
+  padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************* addstudents end *****************/
+
+/***********dashboard******************/
+
+
+/*height: 70vh;
+overflow:scroll;
+margin-right: 20px;
+margin-left: 20px;
+box-shadow: 0px 4px 8px 0px black;*/
+
+
+/**************** dashboard end ****************/
+
+
+
+
+/****addmision*/
+
+
+
+
+
+
+
+.section-title h3 {
+    background: #563D7C;
+    padding: 10px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+   
+}
+
+h3#et {
+    text-transform: capitalize;
+}
+
+.section-title .col-md-12 {
+    margin: 0px;
+    padding: 0px;
+}
+.row form label {
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 0;
+    display: block;
+}
+
+
+.row form input[type="text"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #dddd;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+select {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #dddd;
+    text-transform: capitalize;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+#fs input[type="radio"] {
+    margin: 0 10px;
+   
+}
+#ts input[type="radio"] {
+    margin: 0 10px;
+    margin-bottom: 6px;
+}
+
+/*
+#sub {
+   
+ 
+
+  
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 10px;
+    outline: none;
+  
+}
+*/
+
+
+
+
+/*
+
+('$csname','$cfname','$cmname','$cdob','$cmobile','$caddress','$cgender','$cclass','$cdivision')";*/
+
+
+/*
+
+.topnav {
+  overflow: hidden;
+  background-color: #F1F5FE;
+  
+  
+}
+
+.topnav a{
+
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 8px;
+  margin: 10px 10px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 25px;
+}
+
+.topnav a:hover {
+  color: #ddd;
+  background-color: black;
+  text-decoration: none;
+}
+
+.topnav a:first-child {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.topnav a#active{
+  background-color: rgb(211, 3, 3);
+  color: white;
+  
+ 
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:first-child{
+   letter-spacing: 1px;
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}*/
+
+/************ id-card*************/
+
+#idcard{
+  padding:30px;
+}
+#icard form {
+  width: 50%;
+  float: left;
+}
+
+#result{
+  position: relative;
+  width: 70%;
+  margin-left: 15%;
+  border: 2px solid black;
+  margin-bottom: 2rem;
+}
+
+#result header{
+  width: 100%;
+  background-color: #010844;
+  border-radius: 12px 12px 0px 0px;
+  color: white;
+}
+
+#logos{
+
+  width: 80px;
+  height: 80px;
+  float: right;
+  border-radius: 50%;
+}
+.camp{
+  width: 40%;
+  float: left;
+}
+.camp h4{
+  margin: 12px auto 0 7px;
+}
+.camp span{
+  margin-left: 8px;
+}
+
+#icard .container{
+  width: 50%;
+  float: right;
+}
+.content{
+  width: 80%;
+}
+.content img{
+  float: left;
+  width: 80px;
+  height: 105px;
+  margin-left: 7px;
+  margin-top: 12px;
+}
+.content ul{
+  width: 50%;
+  float: left;
+  padding-left: 15px;
+}
+.content ul li{
+
+  list-style-type: none;
+}

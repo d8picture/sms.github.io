@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+/* top nav bar*/
+
+.topnav {
+    overflow: hidden;
+    background-color: #F1F5FE;
+    
+    
+  }
+  
+  .topnav a{
+
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12px 10px;
+    margin: 24px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 25px;
+  }
+  
+  .topnav a:hover {
+    color: #ddd;
+    background-color: black;
+    text-decoration: none;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+  #logi img{
+      width: 350px;
+      height: 350px;
+      border-radius: 100%;
+
+  }
+  #get{
+      padding: 7px 20px;
+      border-radius: 50px;
+      
+    
+  }
+
+
+
+
+/* end top nav bar*/  
+
+
+
+
+/* footer design*/
+
+
+
+
+
+
+footer{
+    width: 100%;
+    background-color:  #af7800;
+    padding-top: 10px;
+    margin-bottom: 0;
+    position: absolute;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+/* addmision form design */
+
+
+
+/*============================
+Form CSS
+==============================*/
+
+
+
+
+
+
+
+
+
+.section-title h3 {
+    background: #563D7C;
+    padding: 10px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+   
+}
+
+h3#et {
+    text-transform: capitalize;
+}
+
+.section-title .col-md-12 {
+    margin: 0px;
+    padding: 0px;
+}
+.row .form label {
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 0;
+    display: inline-block;
+}
+
+.row .form {
+    margin-bottom: 35px;
+}
+
+.row .form input[type="text"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #dddd;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+select {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #dddd;
+    text-transform: capitalize;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+#fs input[type="radio"] {
+    margin: 0 10px;
+    margin-bottom: 67px;
+}
+#ts input[type="radio"] {
+    margin: 0 10px;
+    margin-bottom: 67px;
+}
+
+
+#btns{
+    margin-left: 42%;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+
+
+
+
+
+/*service menu bar design */
+
+
+
+
+
+
+#srvc{
+    margin-top: 15%;
+}
+
+.left-side img{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.right-side{
+    margin-top: 11%;
+    margin-left: 10px;   
+}
+
+.right-side ul{
+    list-style-type: none;  
+}
+
+.right-side ul li{
+   text-decoration: none;
+    margin-left: 10px;
+    text-align: justify;
+    letter-spacing: 1px; 
+}
+.right-side ul li a{
+    text-decoration: none;
+}
+.top h1{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* contact us*/
+
+
+
+
+#inputbox{
+
+    background: transparent;
+    border: 1px solid rgb(163, 162, 162);
+    letter-spacing: 2px;
+    font-size: 15px;
+    padding: 6px;
+    color: white;
+    }
+    #textarea{
+        background: transparent;
+        border: 1px solid rgb(163, 162, 162);
+        letter-spacing: 2px;
+      
+        font-size: 15px;
+      
+        height: 100px;
+        color: white;
+    }
+    #textarea:focus{
+        outline: none;
+    }
+    
+    .form-group ::placeholder{
+        color: 1px solid rgb(163, 162, 162);
+    }
+    .form-group input:focus{
+        outline: none;
+       
+    }
+    
+    
+    
+    
+    .fa-brands{
+        font-size: 35px;
+       
+        padding: 10px;
+       
+    }
+    
+    .insta .fa-brands{
+        color: rgb(252, 18, 77);
+    }
+    .linkid .fa-brands{
+        color: rgb(56, 56, 252);
+    }
+    .fb .fa-brands{
+        color:rgb(29, 29, 238); 
+    }
+    
+    .uselist ul{
+        margin: 0%;
+        padding: 0%;
+    }
+    .uselist ul li{
+        list-style-type: none;
+        display: block;
+        margin: 10px;
+        font-size: 18px;
+      
+         
+    }
+    .uselist ul li a{
+        text-decoration: none;
+    }
+
+/* login form */
+
+
+
+
+
+
+
+
+
+
+
+
+.divcenter{
+    
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 122);
+   /* background-image: linear-gradient(-27deg, hsl(19, 86%, 53%) 50%, #e49c00 50%);*/
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 10%;
+}
+.divcenter img{
+    width: 130px;
+    height: 130px;
+    position: relative;
+    top: -60px;
+    margin-left: 33%;
+    border-radius: 100%;
+   
+   
+}
+#h2s{
+    
+        text-align: center;  
+        color: white;
+        text-transform: uppercase;
+        font-size: 2em;
+        letter-spacing: 5px;
+        margin-top: -50px;
+        margin-bottom: 50px;
+}
+.divcenter form{
+  text-align: center;
+}
+.nputbox{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+ 
+}
+.divcenter input:focus{
+    outline: none;
+    
+}
+
+.divcenter::placeholder{
+    letter-spacing: 2px;
+    color: rgba(192, 192, 192, 0.473);
+ 
+}
+
+.buton{
+    width: 50%; 
+    height: 30px;
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: red;
+   color: aliceblue;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.FORGOT-SECTION{
+    color: white;
+    text-align: right;
+
+}
+.FORGOT-SECTION h4{
+    margin-right: 15px;
+    
+}
+.FORGOT-SECTION p{
+    margin-top: -15px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*sign-up form*/
+
+
+
+
+
+
+
+
+
+.centerdiv{
+    
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*background-color: red;*/
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 122);
+   /* background-image: linear-gradient(-27deg, hsl(19, 86%, 53%) 50%, #e49c00 50%);*/
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 10%;
+ }
+.centerdiv img{
+    width: 130px;
+    height: 130px;
+    position: relative;
+    top: -60px;
+    margin-left: 33%;
+    border-radius: 100%;
+   
+   
+}
+#h22{
+    
+        text-align: center;  
+        color: white;
+        text-transform: uppercase;
+        font-size: 2em;
+        letter-spacing: 5px;
+        margin-top: -50px;
+        margin-bottom: 40px;
+}
+.centerdiv form{
+  text-align: center;
+}
+.inputboxx{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+ 
+}
+.centerdiv input:focus{
+    outline: none;
+    
+}
+
+#form::placeholder{
+    letter-spacing: 2px;
+    color: rgba(192, 192, 192, 0.473);
+    font-size: 16px;
+ 
+}
+
+.butoon{
+    width: 20%; 
+    height: 30px;
+    display: inline;
+    margin: 8px;
+    border: none;
+    background-color: red;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.ACCOUNT-SECTION{
+    color: white;
+    text-align: right;
+
+}
+.ACCOUNT-SECTION h4{
+    position: absolute;
+   
+}
